@@ -29,9 +29,13 @@ Install by using Pip: `pip install markdown jinja2 elementtree`
     $ cd m2d
     $ git clone https://github.com/imakewebthings/deck.js.git
     # Now setup your local webserver to serve the deck.js/introduction directory
+    
     $ git clone https://github.com/ulf/markdown2deckjs.git
     $ cd markdown2deckjs
-    $ ./m2d README.md templates/plain.html "Readme" > ../deck.js/introduction/readme.html
+    
+    # Usage: md2 [-p] <input.md> <template.html> [<title>]
+    # <template> will be found in ./templates
+    $ ./m2d README.md plain.html "Readme" > ../deck.js/introduction/readme.html
     # Look at the readme.html file in your browser. Done
 
 ## How do I create my slides?
