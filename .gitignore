@@ -1,0 +1,7 @@
+# packates
+.egg-info/
+dist/
+build/
+env/
+
+*.pyc

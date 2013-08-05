@@ -8,13 +8,11 @@ Version: 0.1 | 2011/09/21
 
 After I saw deck.js recently, I immediatelly liked the look and feel of it. What I did not like was to generate HTML slides by hand. I surfed around a bit and quickly found out that there was a nice markdown library for python. Playing around (and not sleeping instead) quickly showed results. Voila.
 
-## Dependencies
+## Setup
 
-* markdown
-* jinja2
-* elementtree
+install [virtualenv](https://pypi.python.org/pypi/virtualenv) at first.
 
-Install by using Pip: `pip install markdown jinja2 elementtree`
+    script/bootstrap
 
 ## How to use
 
@@ -35,7 +33,7 @@ Install by using Pip: `pip install markdown jinja2 elementtree`
     
     # Usage: md2 [-p] <input.md> <template.html> [<title>]
     # <template> will be found in ./templates
-    $ ./m2d README.md plain.html "Readme" > ../deck.js/introduction/readme.html
+    $ python m2d README.md plain.html "Readme" > ../deck.js/introduction/readme.html
     # Look at the readme.html file in your browser. Done
 
 ## How do I create my slides?

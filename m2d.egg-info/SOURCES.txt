@@ -1,0 +1,6 @@
+setup.py
+m2d.egg-info/PKG-INFO
+m2d.egg-info/SOURCES.txt
+m2d.egg-info/dependency_links.txt
+m2d.egg-info/requires.txt
+m2d.egg-info/top_level.txt
