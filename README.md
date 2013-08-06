@@ -12,7 +12,12 @@ After I saw deck.js recently, I immediatelly liked the look and feel of it. What
 
 install [virtualenv](https://pypi.python.org/pypi/virtualenv) at first.
 
+then bootstrap:
+
     script/bootstrap
+
+### Opional
+[virtualenv exec](https://github.com/erning/ve) will help a lot on executing command in the context of virtualenv.
 
 ## How to use
 
@@ -31,9 +36,14 @@ install [virtualenv](https://pypi.python.org/pypi/virtualenv) at first.
     $ git clone https://github.com/ulf/markdown2deckjs.git
     $ cd markdown2deckjs
     
-    # Usage: md2 [-p] <input.md> <template.html> [<title>]
-    # <template> will be found in ./templates
+    # if you don't have ve, active virtualenv first
+    $ source .virtualenv/bin/activate
+    # plain.html will be found in ./templates
     $ python m2d README.md plain.html "Readme" > ../deck.js/introduction/readme.html
+
+    # if you have ve, run command directly
+    $ ve python m2d README.md plain.html "Readme" > ../deck.js/introduction/readme.html
+
     # Look at the readme.html file in your browser. Done
 
 ## How do I create my slides?
@@ -50,14 +60,14 @@ Every time the markdown contains a H1 or H2 (#, ##), a new slide will be created
 
 will result in a three-slide presentation. Try it:
   
-    $ m2d example1.md templates/plain.html "My Test" > ../deck.js/example1.html
+    $ python m2d example1.md templates/plain.html "My Test" > ../deck.js/example1.html
 
 
 ## Downloadable files
 
 One problem with deck.js is that it is not easily sharable offline. So I added an option to the program which allows for creation of simple HTML files for easy distribution. No slide effects will be applied in the HTML code, as well other control elements (like tilde, see below) will be stripped.
 
-    $ m2d example.md templates/download.html "My Test" -p > downloadable.html
+    $ python m2d example.md templates/download.html "My Test" -p > downloadable.html
 
 ## Seems like magic. How does it work?
 
