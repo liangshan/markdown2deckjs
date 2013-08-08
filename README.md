@@ -1,8 +1,10 @@
 # markdown2deckjs
 
-Author: Ulf Bögeholz
+Orginal Author: Ulf Bögeholz
 
 Version: 0.1 | 2011/09/21
+
+Updated at 2013/08/06 by liangshan
 
 ## What is this?
 
@@ -33,8 +35,9 @@ then bootstrap:
     $ git clone https://github.com/imakewebthings/deck.js.git
     # Now setup your local webserver to serve the deck.js/introduction directory
     
-    $ git clone https://github.com/ulf/markdown2deckjs.git
+    $ git clone https://github.com/liangshan/markdown2deckjs.git
     $ cd markdown2deckjs
+    $ script/bootstrap
     
     # if you don't have ve, active virtualenv first
     $ source .virtualenv/bin/activate
